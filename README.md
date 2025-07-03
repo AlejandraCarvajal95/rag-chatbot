@@ -6,6 +6,7 @@ Este demo muestra cómo construir un chatbot RAG (Retrieval-Augmented Generation
 
 ## 📁 Estructura del proyecto
 
+```bash
 ├── data/
 │ └── data.txt # Documento de referencia indexado
 ├── clientes.csv # Simula una fuente externa tipo CRM
@@ -14,7 +15,7 @@ Este demo muestra cómo construir un chatbot RAG (Retrieval-Augmented Generation
 ├── .env # Contiene TOGETHER_API_KEY
 ├── requirements.txt
 └── README.md
-
+```
 ---
 
 ## 🚀 Tecnologías utilizadas
