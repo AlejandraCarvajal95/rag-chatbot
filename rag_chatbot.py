@@ -13,20 +13,20 @@ def main():
     
     # Cargar documentos
     documents = SimpleDirectoryReader("data").load_data()
-    print("Documentos cargados:")
-    for doc in documents:
-        print("→", doc.text[:200], "...")
+    #print("Documentos cargados:")
+    #for doc in documents:
+    #    print("→", doc.text[:50], "...")
     
     # Crear índice vectorial
     index = VectorStoreIndex.from_documents(documents)
-    print("\nÍndice vectorial creado exitosamente!")
+    #print("\nÍndice vectorial creado exitosamente!")
     
     # Crear motor de consulta
     query_engine = index.as_query_engine(
         llm=TogetherLLM(
             model="deepseek-ai/DeepSeek-V3",
             temperature=0.3,
-            max_tokens=200,
+            max_tokens=50,
             top_p=0.9,
             frequency_penalty=0.1,
             presence_penalty=0.1
@@ -36,16 +36,16 @@ def main():
     # Ejemplo de consulta RAG
 
     while True:
-      user_input = input("\n Pregunta (o escribe 'salir'): ")
-      if user_input.lower() in ["salir", "exit"]:
-          break
-    response = query_engine.query(user_input)
-    print(f"\n respuesta: {response}")
+        user_input = input("\n Pregunta (o escribe 'salir'): ")
+        if user_input.lower() in ["salir", "exit"]:
+            break
+        response = query_engine.query(user_input)
+        print(f"\n respuesta: {response}")
 
     
     # Ejemplo con Together AI directo (sin RAG)
-    print("\n" + "="*50)
-    print("Ejemplo con Together AI directo:")
+    #print("\n" + "="*50)
+    #print("Ejemplo con Together AI directo:")
     
     client = Together()
     response = client.chat.completions.create(
