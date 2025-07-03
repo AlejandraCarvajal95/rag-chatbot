@@ -4,7 +4,7 @@ from llama_index.core import VectorStoreIndex, SimpleDirectoryReader, Settings
 from llama_index.embeddings.huggingface import HuggingFaceEmbedding  
 from llama_index.llms.together import TogetherLLM  
 import os
-import pandas as pd  # Para manejo de datos CSV (CRM)
+import pandas as pd  
 
 # Configuración del modelo de embeddings para vectorización
 # Intenta cargar un modelo local de HuggingFace para mayor velocidad
