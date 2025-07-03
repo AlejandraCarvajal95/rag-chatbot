@@ -56,3 +56,8 @@ python rag_chatbot.py
 ```bash
 python direct_llm_example.py
 ```
+
+📫 Contacto
+Desarrollado por María Alejandra Moya Carvajal
+
+📧 lisindit@gmail.com
