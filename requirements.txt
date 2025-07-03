@@ -1,0 +1,7 @@
+together
+dotenv
+llama-index
+chromadb
+sentence-transformers
+torch
+llama-index-llms-together
