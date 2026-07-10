@@ -30,12 +30,12 @@ This demo showcases how to build a Retrieval-Augmented Generation (RAG) chatbot 
 ---
 
 ## ✨ Features
-Retrieval-Augmented Generation (RAG)
-Semantic document search with LlamaIndex
-DeepSeek-V3 inference through Together AI
-Local embeddings using MiniLM-L6-v2
-Simulated CRM integration via CSV files
-Modular and easy-to-extend project structure
+- Retrieval-Augmented Generation (RAG)
+- Semantic document search with LlamaIndex
+- DeepSeek-V3 inference through Together AI
+- Local embeddings using MiniLM-L6-v2
+- Simulated CRM integration via CSV files
+- Modular and easy-to-extend project structure
 
 ---
 
