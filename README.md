@@ -1,63 +1,73 @@
-# 🧠 RAG Chatbot con LlamaIndex + Together.ai
+# 🧠 RAG Chatbot with LlamaIndex + Together.ai
 
-Este demo muestra cómo construir un chatbot RAG (Retrieval-Augmented Generation) que indexa documentos empresariales y responde preguntas en lenguaje natural. Utiliza `LlamaIndex` para la recuperación semántica y `Together.ai` como backend LLM (modelo `DeepSeek-V3`). También incluye una simulación de integración con un CRM externo usando un archivo `clientes.csv`.
+This demo showcases how to build a Retrieval-Augmented Generation (RAG) chatbot capable of indexing enterprise documents and answering natural language questions. It uses `LlamaIndex` or semantic document retrieval and `Together.ai` ( `DeepSeek-V3`) as the LLM backend. The project also includes a simulated CRM integration using a `clientes.csv` file to demonstrate how external business data can be incorporated into the chatbot..
 
 ---
 
-## 📁 Estructura del proyecto
+## 📁 Project Structure
 
 ```bash
 ├── data/
-│ └── data.txt # Documento de referencia indexado
-├── clientes.csv # Simula una fuente externa tipo CRM
-├── rag_chatbot.py # Chatbot con RAG + integración externa
-├── direct_llm_example.py # Consulta directa al modelo LLM sin RAG
-├── .env # Contiene TOGETHER_API_KEY
+│ └── data.txt # Reference document indexed by the chatbot
+├── clientes.csv # Simulated external CRM data source
+├── rag_chatbot.py # RAG chatbot with CRM integration
+├── direct_llm_example.py # Direct interaction with the LLM (without RAG)
+├── .env  # Stores the TOGETHER_API_KEY
 ├── requirements.txt
 └── README.md
 ```
 ---
 
-## 🚀 Tecnologías utilizadas
+## 🚀 Technologies used
 
 - **Python 3.10+**
 - **LlamaIndex**
-- **Together.ai (modelo: DeepSeek-V3)**
-- **Embeddings locales (MiniLM-L6-v2)**
-- **Pandas** (para lectura de CSV simulando CRM)
-- **dotenv** (manejo de variables de entorno)
+- **Together.ai (DeepSeek-V3)**
+- **Sentence Transformers (MiniLM-L6-v2 local embeddings)**
+- **Pandas** (CRM data simulation)
+- **dotenv** (environment variable management)
 
 ---
 
-## 🛠️ Cómo ejecutar
+## ✨ Features
+Retrieval-Augmented Generation (RAG)
+Semantic document search with LlamaIndex
+DeepSeek-V3 inference through Together AI
+Local embeddings using MiniLM-L6-v2
+Simulated CRM integration via CSV files
+Modular and easy-to-extend project structure
 
-1. Clona el repositorio:
+---
+
+## 🛠️ Getting Started
+
+1. Clone the repository:
 ```bash
 git clone https://github.com/tuusuario/rag-chatbot-demo.git
 cd rag-chatbot-demo
 ```
 
-2. Instala las dependencias:
+2. Install the dependencies:
 ```bash
 pip install -r requirements.txt
 ```
 
-3. Crea un archivo .env con tu API Key de Together:
+3. Create a .env file:
 ```bash
 TOGETHER_API_KEY=sk-xxxxxxxxxxxxxxxxx
 ```
 
-4. Ejecuta el chatbot RAG:
+4. Run the RAG chatbot:
 ```bash
 python rag_chatbot.py
 ```
 
-5. (Opcional) Ejecuta una consulta directa al modelo (sin RAG):
+5. (Optional) Run a direct LLM query without RAG:
 ```bash
 python direct_llm_example.py
 ```
 
-📫 Contacto
-Desarrollado por María Alejandra Moya Carvajal
+📫 Contact
+Developed by María Alejandra Moya Carvajal
 
 📧 lisindit@gmail.com
